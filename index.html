@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>吳峻頡的個人履歷</title>
+
 <style>
   body {
     font-family: 'Microsoft JhengHei', sans-serif;
@@ -23,6 +24,21 @@
   h1 { text-align:center; margin-bottom:10px; color:#2c3e50;}
   h2 { border-bottom:2px solid #3498db; padding-bottom:5px; margin-top:30px; color:#2980b9;}
 
+  /* 📸 照片 */
+  .profile {
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+  }
+
+  .profile img {
+    width:220px;
+    height:300px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.2);
+  }
+
   .personal-info {
     display:flex; justify-content:space-between; flex-wrap:wrap; margin-bottom:20px;
   }
@@ -35,15 +51,40 @@
   .section-item h3 { margin:0; font-size:1.1rem; color:#34495e;}
   .section-item p { margin:5px 0 0 0; font-size:0.95rem; line-height:1.4;}
 
-  .toggle-btn { background:#e67e22; border:none; color:white; padding:6px 12px; border-radius:6px; cursor:pointer; margin-top:5px; font-size:0.9rem;}
-  .extra-info { display:none; margin-top:5px; padding:8px; background:#f1c40f; border-radius:6px;}
+  .toggle-btn {
+    background:#e67e22;
+    border:none;
+    color:white;
+    padding:6px 12px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:5px;
+    font-size:0.9rem;
+  }
 
-  @media(max-width:600px){ .personal-info{flex-direction:column;} }
+  .extra-info {
+    display:none;
+    margin-top:5px;
+    padding:8px;
+    background:#f1c40f;
+    border-radius:6px;
+  }
+
+  @media(max-width:600px){
+    .personal-info{flex-direction:column;}
+  }
 </style>
 </head>
+
 <body>
 
 <div class="container">
+
+  <!-- 📸 照片 -->
+  <div class="profile">
+    <img src="images/profile.jpg" alt="個人照片">
+  </div>
+
   <h1>吳峻頡的個人履歷</h1>
 
   <!-- 個人資訊 -->
@@ -74,6 +115,7 @@
 
   <!-- 經歷 -->
   <h2>經歷</h2>
+
   <div class="section-item">
     <h3>環保志工</h3>
     <p>協助校園清潔與資源回收，學習團隊合作與溝通能力。</p>
@@ -95,16 +137,16 @@
 </div>
 
 <script>
-  function toggleExtra(btn){
-    const extra = btn.nextElementSibling;
-    if(extra.style.display === "block"){
-      extra.style.display = "none";
-      btn.textContent = "更多細節";
-    } else {
-      extra.style.display = "block";
-      btn.textContent = "收合細節";
-    }
+function toggleExtra(btn){
+  const extra = btn.nextElementSibling;
+  if(extra.style.display === "block"){
+    extra.style.display = "none";
+    btn.textContent = "更多細節";
+  } else {
+    extra.style.display = "block";
+    btn.textContent = "收合細節";
   }
+}
 </script>
 
 </body>
