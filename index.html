@@ -1,153 +1,60 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>吳峻頡的個人履歷</title>
-
-<style>
-  body {
-    font-family: 'Microsoft JhengHei', sans-serif;
-    background-color: #f7f7f7;
-    margin:0; padding:0; color:#333;
-  }
-
-  .container {
-    max-width:900px;
-    margin:40px auto;
-    background:#fff;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.1);
-  }
-
-  h1 { text-align:center; margin-bottom:10px; color:#2c3e50;}
-  h2 { border-bottom:2px solid #3498db; padding-bottom:5px; margin-top:30px; color:#2980b9;}
-
-  /* 📸 照片 */
-  .profile {
-    display:flex;
-    justify-content:center;
-    margin-bottom:20px;
-  }
-
-  .profile img {
-    width:220px;
-    height:300px;
-    object-fit:cover;
-    border-radius:12px;
-    box-shadow:0 6px 20px rgba(0,0,0,0.2);
-  }
-
-  .personal-info {
-    display:flex; justify-content:space-between; flex-wrap:wrap; margin-bottom:20px;
-  }
-  .personal-info div { margin:5px 0;}
-
-  .skills { display:flex; flex-wrap:wrap; gap:10px; margin-top:10px;}
-  .skill { background:#3498db; color:white; padding:5px 10px; border-radius:6px; font-size:0.9rem;}
-
-  .section-item { margin-bottom:15px;}
-  .section-item h3 { margin:0; font-size:1.1rem; color:#34495e;}
-  .section-item p { margin:5px 0 0 0; font-size:0.95rem; line-height:1.4;}
-
-  .toggle-btn {
-    background:#e67e22;
-    border:none;
-    color:white;
-    padding:6px 12px;
-    border-radius:6px;
-    cursor:pointer;
-    margin-top:5px;
-    font-size:0.9rem;
-  }
-
-  .extra-info {
-    display:none;
-    margin-top:5px;
-    padding:8px;
-    background:#f1c40f;
-    border-radius:6px;
-  }
-
-  @media(max-width:600px){
-    .personal-info{flex-direction:column;}
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>吳峻頡的個人履歷</title>
+  <style>
+    body {
+      font-family: 'Microsoft JhengHei', sans-serif;
+      background-color: #f7f7f7;
+      margin:0; padding:0; color:#333;
+    }
+    .container {
+      max-width:900px;
+      margin:40px auto;
+      background:#fff;
+      padding:30px;
+      border-radius:12px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    }
+    h1 { text-align:center; margin-bottom:10px; color:#2c3e50;}
+    h2 { border-bottom:2px solid #3498db; padding-bottom:5px; margin-top:30px; color:#2980b9;}
+    .profile { display:flex; justify-content:center; margin-bottom:20px;}
+    .profile img {
+      width:220px; height:300px; object-fit:cover;
+      border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
-
 <body>
-
-<div class="container">
-
-  <!-- 📸 照片 -->
-  <div class="profile">
-    <img src="images/profile.jpeg" alt="個人照片">
-  </div>
-
-  <h1>吳峻頡的個人履歷</h1>
-
-  <!-- 個人資訊 -->
-  <div class="personal-info">
-    <div><strong>姓名：</strong>吳峻頡</div>
-    <div><strong>學號：</strong>114018036</div>
-    <div><strong>科系：</strong>聽力暨語言治療系 / 醫學檢驗暨再生醫學學系</div>
-    <div><strong>Email：</strong>jasewu0112@gmail.com</div>
-    <div><strong>電話：</strong>0912-345-678</div>
-  </div>
-
-  <!-- 教育背景 -->
-  <h2>教育背景</h2>
-  <div class="section-item">
-    <h3>亞洲大學</h3>
-    <p>聽力暨語言治療系 / 醫學檢驗暨再生醫學學系 | 2023 - 現在</p>
-  </div>
-
-  <!-- 技能 -->
-  <h2>技能</h2>
-  <div class="skills">
-    <div class="skill">英文閱讀</div>
-    <div class="skill">英文寫作</div>
-    <div class="skill">醫學檢驗實驗</div>
-    <div class="skill">心理學應用</div>
-    <div class="skill">數據分析</div>
-  </div>
-
-  <!-- 經歷 -->
-  <h2>經歷</h2>
-
-  <div class="section-item">
-    <h3>環保志工</h3>
-    <p>協助校園清潔與資源回收，學習團隊合作與溝通能力。</p>
-    <button class="toggle-btn" onclick="toggleExtra(this)">更多細節</button>
-    <div class="extra-info">
-      在志工過程中學會耐心傾聽不同意見，也理解如何與不同背景的人協作，對未來與聽障朋友互動有幫助。
+  <div class="container">
+    <!-- 📸 照片 -->
+    <div class="profile">
+      <img src="profile.jpeg" alt="個人照片">
     </div>
+
+    <h1>吳峻頡的個人履歷</h1>
+
+    <h2>個人資訊</h2>
+    <p><strong>姓名：</strong>吳峻頡</p>
+    <p><strong>學號：</strong>114018036</p>
+    <p><strong>科系：</strong>聽力暨語言治療系 / 醫學檢驗暨再生醫學學系</p>
+    <p><strong>Email：</strong>jasewu0112@gmail.com</p>
+    <p><strong>電話：</strong>0912-345-678</p>
+
+    <h2>教育背景</h2>
+    <p>亞洲大學 | 2023 - 現在</p>
+
+    <h2>技能</h2>
+    <ul>
+      <li>英文閱讀</li>
+      <li>英文寫作</li>
+      <li>醫學檢驗實驗</li>
+      <li>心理學應用</li>
+      <li>數據分析</li>
+    </ul>
   </div>
-
-  <div class="section-item">
-    <h3>研究助理 / 實驗課程</h3>
-    <p>參與細胞、分子相關實驗，掌握基礎醫學檢驗技術。</p>
-    <button class="toggle-btn" onclick="toggleExtra(this)">更多細節</button>
-    <div class="extra-info">
-      熟悉基本操作流程與實驗安全規範，能整理實驗數據並進行簡單分析。
-    </div>
-  </div>
-
-</div>
-
-<script>
-function toggleExtra(btn){
-  const extra = btn.nextElementSibling;
-  if(extra.style.display === "block"){
-    extra.style.display = "none";
-    btn.textContent = "更多細節";
-  } else {
-    extra.style.display = "block";
-    btn.textContent = "收合細節";
-  }
-}
-</script>
-
 </body>
 </html>
+
