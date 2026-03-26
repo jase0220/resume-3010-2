@@ -1,93 +1,102 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>吳峻頡的個人履歷</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>吳峻頡的個人履歷</title>
 
-  <style>
-    body {
-      font-family: 'Microsoft JhengHei', sans-serif;
-      background: linear-gradient(135deg, #eef2f3, #dfe9f3);
-      margin:0;
-      color:#333;
-    }
+<style>
+body{
+  font-family:'Microsoft JhengHei',sans-serif;
+  background: linear-gradient(135deg,#eef2f3,#dfe9f3);
+  margin:0;
+}
 
-    .container {
-      max-width:900px;
-      margin:50px auto;
-      background:#fff;
-      padding:40px;
-      border-radius:16px;
-      box-shadow:0 8px 25px rgba(0,0,0,0.1);
-    }
+/* 外框 */
+.container{
+  max-width:1000px;
+  margin:50px auto;
+  display:flex;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  border-radius:16px;
+  overflow:hidden;
+}
 
-    h1 {
-      text-align:center;
-      margin-bottom:10px;
-      color:#2c3e50;
-    }
+/* 左側 */
+.left{
+  flex:2;
+  background:#f5f7fa;
+  padding:40px;
+}
 
-    h2 {
-      border-left:5px solid #3498db;
-      padding-left:10px;
-      margin-top:30px;
-      color:#2980b9;
-    }
+/* 右側 */
+.right{
+  flex:1;
+  background:#ffffff;
+  padding:30px;
+  text-align:center;
+  border-left:1px solid #eee;
+}
 
-    /* 📸 照片 */
-    .profile {
-      display:flex;
-      justify-content:center;
-      margin-bottom:20px;
-    }
+/* 標題 */
+h2{
+  border-left:5px solid #3498db;
+  padding-left:10px;
+  color:#2980b9;
+  margin-top:30px;
+}
 
-    .profile img {
-      width:180px;
-      height:180px;
-      object-fit:cover;
-      border-radius:50%; /* 圓形 */
-      border:4px solid #3498db;
-      box-shadow:0 6px 20px rgba(0,0,0,0.2);
-      transition:0.3s;
-    }
+/* 個人照片 */
+.profile img{
+  width:150px;
+  height:150px;
+  object-fit:cover;
+  border-radius:10px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.2);
+  margin-bottom:15px;
+}
 
-    .profile img:hover {
-      transform:scale(1.05);
-    }
+/* 名字 */
+.name{
+  font-size:24px;
+  font-weight:bold;
+  margin:10px 0;
+}
 
-    .info {
-      text-align:center;
-      margin-bottom:20px;
-      line-height:1.8;
-    }
+/* 職稱 */
+.title{
+  color:#888;
+  margin-bottom:20px;
+}
 
-    ul {
-      padding-left:20px;
-    }
+/* 右側資訊 */
+.info{
+  text-align:left;
+  font-size:14px;
+  line-height:1.8;
+}
 
-    li {
-      margin-bottom:5px;
-    }
-  </style>
+.info p{
+  margin:6px 0;
+}
+
+/* 技能 */
+ul{
+  padding-left:20px;
+}
+
+li{
+  margin-bottom:5px;
+}
+</style>
 </head>
 
 <body>
-  <div class="container">
 
-    <!-- 📸 照片 -->
-    <div class="profile">
-      <img src="大頭照.jpg" alt="個人照片">
-    </div>
+<div class="container">
 
-    <h1>吳峻頡</h1>
-
-    <div class="info">
-      <p>學號：114018036</p>
-      <p>科系：聽力暨語言治療系 / 醫學檢驗暨再生醫學學系</p>
-      <p>Email：jasewu0112@gmail.com</p>
-      <p>電話：0912-345-678</p>
-    </div>
+  <!-- 左側 -->
+  <div class="left">
 
     <h2>教育背景</h2>
     <p>亞洲大學 | 2023 - 現在</p>
@@ -100,6 +109,29 @@
       <li>數據分析</li>
     </ul>
 
+    <h2>個人特質</h2>
+    <p>具備良好的溝通能力與同理心，能夠傾聽他人需求並給予適當回應。</p>
+
   </div>
+
+  <!-- 右側 -->
+  <div class="right">
+
+    <div class="profile">
+      <img src="大頭照.jpg" alt="個人照片">
+    </div>
+
+    <div class="name">吳峻頡</div>
+    <div class="title">聽力暨語言治療 / 醫學檢驗</div>
+
+    <div class="info">
+      <p>學號：114018036</p>
+      <p>Email：jasewu0112@gmail.com</p>
+    </div>
+
+  </div>
+
+</div>
+
 </body>
 </html>
