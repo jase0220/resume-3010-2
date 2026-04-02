@@ -4,15 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>吳峻頡的個人履歷</title>
-
 <style>
 body{
   font-family:'Microsoft JhengHei',sans-serif;
   background: linear-gradient(135deg,#eef2f3,#dfe9f3);
   margin:0;
 }
-
-/* 外框 */
 .container{
   max-width:1000px;
   margin:50px auto;
@@ -21,15 +18,11 @@ body{
   border-radius:16px;
   overflow:hidden;
 }
-
-/* 左側 */
 .left{
   flex:2;
   background:#f5f7fa;
   padding:40px;
 }
-
-/* 右側 */
 .right{
   flex:1;
   background:#ffffff;
@@ -37,16 +30,12 @@ body{
   text-align:center;
   border-left:1px solid #eee;
 }
-
-/* 標題 */
 h2{
   border-left:5px solid #3498db;
   padding-left:10px;
   color:#2980b9;
   margin-top:30px;
 }
-
-/* 個人照片 */
 .profile img{
   width:150px;
   height:150px;
@@ -55,58 +44,38 @@ h2{
   box-shadow:0 6px 15px rgba(0,0,0,0.2);
   margin-bottom:15px;
 }
-
-/* 名字 */
 .name{
   font-size:24px;
   font-weight:bold;
   margin:10px 0;
 }
-
-/* 職稱 */
 .title{
   color:#888;
   margin-bottom:20px;
 }
-
-/* 右側資訊 */
 .info{
   text-align:left;
   font-size:14px;
   line-height:1.8;
 }
-
 .info p{
   margin:6px 0;
 }
-
-/* 技能 */
-ul{
-  padding-left:20px;
-}
-
-li{
-  margin-bottom:5px;
-}
+ul{padding-left:20px;}
+li{margin-bottom:5px;}
 </style>
 </head>
-
 <body>
 
 <!-- 背景音樂 -->
 <audio id="bgm" autoplay loop playsinline>
-  <source src="music.mp3" type="audio/mpeg">
+  <source src="青之誓言.mp3" type="audio/mpeg">
 </audio>
-
 <script>
   const audio = document.getElementById("bgm");
-
-  // 嘗試直接播放
   audio.play().catch(() => {
-    // 若被瀏覽器擋住，先靜音播放再解除靜音
     audio.muted = true;
     audio.play();
-
     setTimeout(() => {
       audio.muted = false;
     }, 100);
@@ -114,12 +83,9 @@ li{
 </script>
 
 <div class="container">
-
-  <!-- 左側 -->
   <div class="left">
     <h2>教育背景</h2>
     <p>亞洲大學 | 2023 - 現在</p>
-
     <h2>技能</h2>
     <ul>
       <li>英文閱讀與寫作</li>
@@ -127,12 +93,9 @@ li{
       <li>心理學應用</li>
       <li>數據分析</li>
     </ul>
-
     <h2>個人特質</h2>
     <p>具備良好的溝通能力與同理心，能夠傾聽他人需求並給予適當回應。</p>
   </div>
-
-  <!-- 右側 -->
   <div class="right">
     <div class="profile">
       <img src="大頭照.jpg" alt="個人照片">
@@ -144,9 +107,7 @@ li{
       <p>Email：jasewu0112@gmail.com</p>
     </div>
   </div>
-
 </div>
 
 </body>
 </html>
-
