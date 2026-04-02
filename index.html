@@ -67,20 +67,11 @@ li{margin-bottom:5px;}
 </head>
 <body>
 
-<!-- 背景音樂 -->
-<audio id="bgm" autoplay loop playsinline>
+<!-- 背景音樂（有控制器） -->
+<audio id="bgm" controls loop>
   <source src="青之誓言.mp3" type="audio/mpeg">
+  你的瀏覽器不支援音樂播放
 </audio>
-<script>
-  const audio = document.getElementById("bgm");
-  audio.play().catch(() => {
-    audio.muted = true;
-    audio.play();
-    setTimeout(() => {
-      audio.muted = false;
-    }, 100);
-  });
-</script>
 
 <div class="container">
   <div class="left">
