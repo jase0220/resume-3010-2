@@ -93,11 +93,30 @@ li{
 
 <body>
 
+<!-- 背景音樂 -->
+<audio id="bgm" autoplay loop playsinline>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const audio = document.getElementById("bgm");
+
+  // 嘗試直接播放
+  audio.play().catch(() => {
+    // 若被瀏覽器擋住，先靜音播放再解除靜音
+    audio.muted = true;
+    audio.play();
+
+    setTimeout(() => {
+      audio.muted = false;
+    }, 100);
+  });
+</script>
+
 <div class="container">
 
   <!-- 左側 -->
   <div class="left">
-
     <h2>教育背景</h2>
     <p>亞洲大學 | 2023 - 現在</p>
 
@@ -111,27 +130,23 @@ li{
 
     <h2>個人特質</h2>
     <p>具備良好的溝通能力與同理心，能夠傾聽他人需求並給予適當回應。</p>
-
   </div>
 
   <!-- 右側 -->
   <div class="right">
-
     <div class="profile">
       <img src="大頭照.jpg" alt="個人照片">
     </div>
-
     <div class="name">吳峻頡</div>
     <div class="title">聽力暨語言治療 / 醫學檢驗</div>
-
     <div class="info">
       <p>學號：114018036</p>
       <p>Email：jasewu0112@gmail.com</p>
     </div>
-
   </div>
 
 </div>
 
 </body>
 </html>
+
